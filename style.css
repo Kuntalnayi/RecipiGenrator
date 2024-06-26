@@ -1,0 +1,118 @@
+nav .logo{
+      font-size: 25px;
+      font-weight: bold;
+      padding-left: 10%;
+      color: #fff !important;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+}
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+body{
+     background: #2b1d0f;
+     color: #fff !important;
+}
+header{
+    background: #212121 !important;
+}
+.recipe-cont{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+     grid-gap: 40px;
+     margin: 15px auto;
+     width: 80%;
+     padding: 15px;
+     text-align: center;
+     
+     place-items: center;
+}
+.recipe{
+      background: #fff;
+      color: black;
+      /* max-width: 300px; */
+      display: flex;
+      flex-direction: column;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(78, 78, 73, 0.1), -5px -5px 10px  rgba(34, 34, 34, 0.5),;
+      cursor: pointer;
+      overflow: hidden;
+      
+}
+.recipe img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+}
+
+.recipe h5{
+     font-size: 20px !important;
+     margin-top: 10px !important;
+}
+.recipe button{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px auto;
+    background: rgb(184, 24, 24);
+    transition: all 0.4s;
+
+}
+.recipe button:hover{
+     background: rgb(205, 22, 22);
+}
+span{
+     font-weight: bold;
+}
+/* recepi-detail */
+.recepi-detail{
+     display: none;
+     position: fixed;
+    
+     top: 50%;
+     left: 50%;
+     transform: translate(-50% ,-50%) !important;
+     background-color: rgb(69, 57, 57);
+     box-shadow: 0 0 10px rgba(34, 34, 34, 0.5);
+     font-size: 20px;
+     width: 40%;
+     height: 60%;
+     border-radius: 10px;
+     -webkit-transform: translate(-50% -50%);
+     transition: all 0.5s ease-in-out;
+     overflow-y: scroll;
+     
+}
+.recepi-detail::-webkit-scrollbar{
+     width: 10px;
+}
+.recepi-detail::-webkit-scrollbar-thumb{
+     background: #ccc;
+     border-radius: 10px;
+     --webkit-border-radius:10px;
+     cursor: pointer;
+}
+.recipe-content{
+     padding: 30px;
+}
+.recipename{
+     text-align: center;
+     text-transform: capitalize;
+     text-decoration: underline;
+
+}
+.ingredientlist li{
+      margin-bottom: 10px;
+}
+.closebtn{
+     border: none;
+     font-size: 30px;
+     padding: 10px;
+     border-radius: 10px;
+     background: transparent;
+     color: #fff;
+}
